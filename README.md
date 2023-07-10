@@ -8,6 +8,12 @@ This repo is under construction.
 ## Checkpoints
 The model checkpoints for {AT, TRADES, FAT}+CFA are available at [this url](https://drive.google.com/drive/folders/1uHJTVmZ4EgDqXoShbjgwJfCRFYPFeq_F?usp=sharing).
 
+## Train with CFA
+To train with CFA, you first need to split the validation set from the training set:
+1. Edit ''PATH'' in ''generate_validate.py'' as your data path to CIFAR-10 dataset.
+2. Run ''python generate_validate.py''
+
+
 
 ## Citation
 ```
