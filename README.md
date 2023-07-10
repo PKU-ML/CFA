@@ -6,7 +6,7 @@ Author: [Zeming Wei](https://weizeming.com), [Yifei Wang](https://yifeiwang.me),
 This repo is under construction.
 
 ## Checkpoints
-The model checkpoints for {AT,TRADES,FAT}-CFA are available at [this url](https://drive.google.com/drive/folders/1uHJTVmZ4EgDqXoShbjgwJfCRFYPFeq_F?usp=sharing).
+The model checkpoints for {AT, TRADES, FAT}+CFA are available at [this url](https://drive.google.com/drive/folders/1uHJTVmZ4EgDqXoShbjgwJfCRFYPFeq_F?usp=sharing).
 
 
 ## Citation
