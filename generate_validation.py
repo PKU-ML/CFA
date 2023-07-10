@@ -1,4 +1,4 @@
-PATH = '/home/kemove/data/cifar_data'
+PATH = 'data/cifar_data' #YOUR DATAPATH HERE
 
 import torch
 import argparse
