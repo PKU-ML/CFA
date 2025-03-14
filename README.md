@@ -11,8 +11,8 @@ The model checkpoints for {AT, TRADES, FAT}+CFA are available at [this url](http
 ## Train with CFA
 
 #### Split the validation set
-1. Edit ``PATH`` in ``generate_validate.py`` (line 1) as your data path to CIFAR-10 dataset.
-2. Run ``python generate_validate.py``
+1. Edit ``PATH`` in ``generate_validation.py`` (line 1) as your data path to CIFAR-10 dataset.
+2. Run ``python generate_validation.py``
 
 #### Train AT+CFA
 An example code for AT+CFA (you can try other hyper-parameters):
