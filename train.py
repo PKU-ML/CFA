@@ -12,7 +12,7 @@ from tqdm import tqdm
 from attack import pgd_loss, cw_pgd_loss, trades_loss, cw_trades_loss, fat_loss, cw_fat_loss
 from utils import dev, normalize_cifar, load_valid_dataset, weight_average
 from model import PreActResNet18
-from model_wrn import WRN
+#from model_wrn import WRN
 
 def get_args():
     parser = argparse.ArgumentParser()
@@ -41,7 +41,7 @@ def get_args():
     parser.add_argument('--begin', default=10, type=int)
 
     parser.add_argument('--decay-rate', default=0.88 ,type=float)
-    parser.add_argument('--thershold', default=0.24, type=float)
+    parser.add_argument('--threshold', default=0.24, type=float)
 
     parser.add_argument('--debug', action='store_true')
     return parser.parse_args()
@@ -247,7 +247,7 @@ if __name__ == '__main__':
 
         # FAWA
         R_min = valid_result[3].min()
-        if R_min >= args.thershold:
+        if R_min >= args.threshold:
             if not SEAT_init:
                 SEAT_init = True
                 weight_average(FAWA_model, model, args.decay_rate, True)
